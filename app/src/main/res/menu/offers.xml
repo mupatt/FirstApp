@@ -2,6 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item	android:id="@+id/web" android:title="MUST Page" />
     <item	android:id="@+id/mail" android:title="Gmail" />
-
+    <item	android:id="@+id/file" android:title="Read C File" />
+    <item	android:id="@+id/lists" android:title="List View" />
 
 </menu>

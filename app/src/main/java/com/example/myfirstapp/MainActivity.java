@@ -12,17 +12,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
     public static String weburl="http://www.gmail.com";
     public static String website="http://www.must.ac.ug";
     Button music;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        music = findViewById(R.id.mp3);
 
+        music = findViewById(R.id.mp3);
         music.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         message.setText("");
     }
+
     public boolean onCreateOptionsMenu(Menu menu){
     getMenuInflater().inflate(R.menu.offers,menu);
     return true;
@@ -58,7 +61,13 @@ public class MainActivity extends AppCompatActivity {
                 if (webintent.resolveActivity(getPackageManager())!=null){
                     startActivity(webintent);
                 }
+            case R.id.file:
+                startActivity(new Intent(this,Services.class));
+                return true;
 
+            case R.id.lists:
+                startActivity(new Intent(this, listview.class));
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
