@@ -4,5 +4,7 @@
     <item	android:id="@+id/mail" android:title="Gmail" />
     <item	android:id="@+id/file" android:title="Read C File" />
     <item	android:id="@+id/lists" android:title="List View" />
+    <item	android:id="@+id/call" android:title="Make a Call" />
+    <item	android:id="@+id/mails" android:title="Send Mail" />
 
 </menu>
