@@ -121,6 +121,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, listview.class));
                 return true;
 
+            case R.id.music:
+                startActivity(new Intent(this,Service.class));
+                return true;
+
             case R.id.mails:
                 Intent i = new Intent(Intent.ACTION_SEND);
                 i.setData(Uri.parse("mailto"));
