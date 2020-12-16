@@ -8,8 +8,6 @@ import android.provider.Settings;
 import androidx.annotation.Nullable;
 
 public class NewService extends Service {
-
-    // declaring object of MediaPlayer
     private MediaPlayer player;
 
     @Override
