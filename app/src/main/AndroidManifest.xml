@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Service"></activity>
+        <activity android:name=".Storage"></activity>
+        <activity android:name=".Service" />
         <activity android:name=".listview" />
         <activity android:name=".Services" />
         <activity android:name=".SocialMedia" />
@@ -23,18 +24,22 @@
             </intent-filter>
         </activity>
 
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
         <receiver
             android:name=".MyReceiver"
             android:enabled="true"
             android:exported="true" />
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
-        <service android:name=".NewService"/>
-    </application>
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.SET_ALARM" />
 
+        <service android:name=".NewService" />
+    </application>
+    <uses-permission android:name="android.permission.SET_ALARM" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
 
 </manifest>

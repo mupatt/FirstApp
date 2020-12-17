@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item	android:id="@+id/web" android:title="MUST Page" />
     <item	android:id="@+id/mail" android:title="Gmail" />
     <item	android:id="@+id/file" android:title="Read C File" />
@@ -7,6 +8,8 @@
     <item	android:id="@+id/music" android:title="Play Music" />
     <item	android:id="@+id/call" android:title="Make a Call" />
     <item	android:id="@+id/mails" android:title="Send Mail" />
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
 
 
 </menu>

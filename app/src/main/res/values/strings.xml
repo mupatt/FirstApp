@@ -4,7 +4,7 @@
     <string name="heading" translatable="false">Services In Android</string>
     <string name="startButtonText" translatable="false">Start the Service</string>
     <string name="stopButtonText" translatable="false">Stop the Service</string>
-
+    <string name="action_settings" translatable="false">Settings</string>
 
 
 </resources>

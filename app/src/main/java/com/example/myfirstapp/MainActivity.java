@@ -166,6 +166,9 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 return true;
+            case R.id.action_settings:
+                startActivity(new Intent(this,Storage.class));
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
